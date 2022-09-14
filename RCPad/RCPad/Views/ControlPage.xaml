@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RCPad.Views.ControlPage"
+             xmlns:pad="clr-namespace:Pad;assembly=Pad"
+             Title="{Binding Title}">
+    
+     
+    <Grid>
+      
+        <StackLayout VerticalOptions="Center"
+                     HorizontalOptions="Center">
+            <Label Text="{Binding Source={x:Reference PadA}, Path=XAxis, StringFormat='X-Axis: {0:N}'}" />
+            <Label Text="{Binding Source={x:Reference PadA}, Path=YAxis, StringFormat='Y-Axis: {0:N}'}" />
+            <Label Text="{Binding Source={x:Reference PadB}, Path=XAxis, StringFormat='X-Axis: {0:N}'}" />
+            <Label Text="{Binding Source={x:Reference PadB}, Path=YAxis, StringFormat='Y-Axis: {0:N}'}" />
+        </StackLayout>
+
+        <pad:AnalogPad x:Name="PadA"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        Margin="15"
+                        VerticalOptions="End"
+                        HorizontalOptions="Start"
+                        TappedCommand="{Binding TappedCommand}"/>
+        <pad:AnalogPad x:Name="PadB"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        Margin="15"
+                        VerticalOptions="End"
+                        HorizontalOptions="End"
+                        TappedCommand="{Binding DirectionSwipedCommand}"/>
+    </Grid>
+
+</ContentPage>
