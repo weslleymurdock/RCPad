@@ -7,9 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RCPad.Android", "RCPad\RCPa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RCPad.iOS", "RCPad\RCPad.iOS\RCPad.iOS.csproj", "{60191E2B-0F88-46ED-A1DB-C0E93A3A273C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RCPad", "RCPad\RCPad\RCPad.csproj", "{2F395815-8EB5-4A52-8B0A-D2C79F32AC53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RCPad", "RCPad\RCPad\RCPad.csproj", "{2F395815-8EB5-4A52-8B0A-D2C79F32AC53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pad", "Pad\Pad.csproj", "{96B0D71A-1B5E-41D3-B448-C1863E9808F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pad", "Pad\Pad.csproj", "{96B0D71A-1B5E-41D3-B448-C1863E9808F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RCPad.UITests", "RCPad.UITests\RCPad.UITests.csproj", "{EB695C69-C4D1-40C5-A4A5-8C5A172085CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,18 @@ Global
 		{96B0D71A-1B5E-41D3-B448-C1863E9808F7}.Release|iPhone.Build.0 = Release|Any CPU
 		{96B0D71A-1B5E-41D3-B448-C1863E9808F7}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{96B0D71A-1B5E-41D3-B448-C1863E9808F7}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{EB695C69-C4D1-40C5-A4A5-8C5A172085CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB695C69-C4D1-40C5-A4A5-8C5A172085CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB695C69-C4D1-40C5-A4A5-8C5A172085CF}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{EB695C69-C4D1-40C5-A4A5-8C5A172085CF}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{EB695C69-C4D1-40C5-A4A5-8C5A172085CF}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{EB695C69-C4D1-40C5-A4A5-8C5A172085CF}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{EB695C69-C4D1-40C5-A4A5-8C5A172085CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB695C69-C4D1-40C5-A4A5-8C5A172085CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB695C69-C4D1-40C5-A4A5-8C5A172085CF}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{EB695C69-C4D1-40C5-A4A5-8C5A172085CF}.Release|iPhone.Build.0 = Release|Any CPU
+		{EB695C69-C4D1-40C5-A4A5-8C5A172085CF}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{EB695C69-C4D1-40C5-A4A5-8C5A172085CF}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

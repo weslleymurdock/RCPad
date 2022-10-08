@@ -9,16 +9,17 @@ namespace RCPad.ViewModels
 {
     public class ControlsViewModel : BaseViewModel
     {
-        public ICommand TappedCommand { get; }
-        public ICommand DirectionSwipedCommand { get; }
+        public ICommand TappedACommand { get; }
+        public ICommand TappedBCommand { get; }
+
         public ControlsViewModel()
         {
             Title = "Controls";
-            TappedCommand = new Command(ExecuteTappedACommand);
-            DirectionSwipedCommand = new Command(ExecuteTappedBCommand);
+            TappedACommand = new Command(ExecuteTappedACommand);
+            TappedBCommand = new Command(ExecuteDirectionSwipedCommand);
         }
 
-        private async void ExecuteTappedBCommand(object obj)
+        private async void ExecuteDirectionSwipedCommand(object obj)
         {
             await Shell.Current.DisplayAlert("title", "message", "OK");
         }

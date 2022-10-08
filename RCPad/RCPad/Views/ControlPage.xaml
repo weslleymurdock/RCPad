@@ -15,21 +15,22 @@
             <Label Text="{Binding Source={x:Reference PadB}, Path=XAxis, StringFormat='X-Axis: {0:N}'}" />
             <Label Text="{Binding Source={x:Reference PadB}, Path=YAxis, StringFormat='Y-Axis: {0:N}'}" />
         </StackLayout>
-
+        <Label Text="Pad A" VerticalOptions="End" HorizontalOptions="Start"/>
         <pad:AnalogPad x:Name="PadA"
                         WidthRequest="100"
                         HeightRequest="100"
                         Margin="15"
                         VerticalOptions="End"
                         HorizontalOptions="Start"
-                        TappedCommand="{Binding TappedCommand}"/>
+                        TappedCommand="{Binding TappedACommand}"/>
+        <Label Text="Pad B" VerticalOptions="End" HorizontalOptions="End"/>
         <pad:AnalogPad x:Name="PadB"
                         WidthRequest="100"
                         HeightRequest="100"
                         Margin="15"
                         VerticalOptions="End"
                         HorizontalOptions="End"
-                        TappedCommand="{Binding DirectionSwipedCommand}"/>
+                        TappedCommand="{Binding TappedBCommand}"/>
     </Grid>
 
 </ContentPage>
