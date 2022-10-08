@@ -2,6 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Onboardcode.Pad</PackageId>
+    <Version>1.0.0.0</Version>
+    <Authors>Weslley Luiz</Authors>
+    <Company>Onboard Code</Company>
+    <PackageTags>Analog;AnalogPad;JoyPad;Pad;ControlPad;PadButton;Button;Control;</PackageTags>
+    <Description>
+      Custom 'button' component for a simulation of an analogical joypad
+    </Description>
   </PropertyGroup>
 
   <ItemGroup>
