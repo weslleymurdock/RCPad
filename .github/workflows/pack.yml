@@ -22,5 +22,5 @@ jobs:
 
     - name: Push no NuGet
       run: |
-        cd Pad/bin/iPhoneSimulator/Release/
+        cd Pad/bin/Release/netstandard2.0/
         dotnet nuget push *.nupkg --api-key ${{ secrets.NUGET_KEY }} --source ${{ secrets.NUGET_SERVER }} --skip-duplicate
