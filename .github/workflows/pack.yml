@@ -18,7 +18,9 @@ jobs:
         dotnet-version: 6.0.401
 
     - name: Geração do package
-      run: dotnet pack Pad/Pad.csproj -c Release 
+      run: |
+        dotnet build Pad/Pad.csproj -c Release
+        dotnet pack Pad/Pad.csproj -c Release 
 
     - name: Push no NuGet
       run: |
