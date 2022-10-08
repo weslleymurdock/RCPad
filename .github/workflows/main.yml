@@ -33,7 +33,8 @@ jobs:
     - name: iOS Simulator
       run: | 
         nuget restore
-        msbuild RCPad.iOS/RCPad.iOS.csproj /verbosity:normal /t:Rebuild /p:Platform=iPhoneSimulator /p:Configuration=Release
+        cd RCPad/RCPad.iOS
+        msbuild RCPad.iOS.csproj /verbosity:normal /t:Rebuild /p:Platform=iPhoneSimulator /p:Configuration=Release
         
     - uses: actions/upload-artifact@v2
       with:
