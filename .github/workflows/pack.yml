@@ -18,9 +18,9 @@ jobs:
         dotnet-version: 6.0.401
 
     - name: Geração do package
-      run: dotnet pack Pad/Pad.csproj -c Release -o out
+      run: dotnet pack Pad/Pad.csproj -c Release 
 
     - name: Push no NuGet
       run: |
-        cd out
+        cd Pad/bin/Release/netstandart2.0/
         dotnet nuget push *.nupkg --api-key ${{ secrets.NUGET_KEY }} --source ${{ secrets.NUGET_SERVER }} --skip-duplicate
