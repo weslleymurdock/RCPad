@@ -9,7 +9,7 @@ on:
 jobs:
   pack-push:
     env:
-      PATH: ./Pad/Pad.csproj
+      PATH: Pad/Pad.csproj
 
     runs-on: ubuntu-latest
 
