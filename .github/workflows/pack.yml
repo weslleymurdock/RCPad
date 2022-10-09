@@ -7,10 +7,7 @@ on:
     branches: [ master ]
 
 jobs:
-  pack-push:
-    env:
-      PATH: Pad/Pad.csproj
-
+  pack-push: 
     runs-on: ubuntu-latest
 
     steps:
@@ -21,9 +18,11 @@ jobs:
         dotnet-version: 6.0.401
 
     - name: Geração do package
-      run: dotnet pack ${{ env.PATH }} -c Release -o out
+      run: |
+        dotnet build Pad/Pad.csproj -c Release
+        dotnet pack Pad/Pad.csproj -c Release 
 
     - name: Push no NuGet
       run: |
-        cd out
+        cd Pad/bin/Release/netstandard2.0/
         dotnet nuget push *.nupkg --api-key ${{ secrets.NUGET_KEY }} --source ${{ secrets.NUGET_SERVER }} --skip-duplicate

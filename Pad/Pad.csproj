@@ -10,6 +10,8 @@
     <Description>
       Custom 'button' component for a simulation of an analogical joypad
     </Description>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Analog.Pad</Title>
   </PropertyGroup>
 
   <ItemGroup>
